@@ -30,7 +30,7 @@
   height: 2px;
   background-color: black;
   margin-top: 20px;
-  margin-right: 20px;
+  margin-right: 16px;
   -webkit-transition: background-color .2s;
   transition: background-color .2s;
 }
@@ -99,9 +99,6 @@
   font-size: 36px;
   text-align: center;
   margin-left: 20px;
-}
-
-.title {
   position: relative;
 }
 
@@ -111,7 +108,6 @@ button {
   border-radius: 10px;
   background: #00F3BB;
   height: 48px;
-  position: relative;
   justify-items: center;
   display: block;
   margin: auto;

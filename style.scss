@@ -28,7 +28,7 @@
     height: 2px;
     background-color: black;
     margin-top: 20px;
-    margin-right: 20px;
+    margin-right: 16px;
     transition: background-color .2s;
 }
 .menu label span::before, .menu label span::after{
@@ -79,8 +79,6 @@
     font-size: 36px;
     text-align: center;
     margin-left: 20px;
-}
-.title{
     position: relative;
 }
 button{
@@ -89,12 +87,10 @@ button{
     border-radius: 10px;
     background: #00F3BB;
     height: 48px;
-    position: relative;
     justify-items: center;
     display: block;
     margin: auto;
 }
-
 .box{
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     margin-top: 50px;
