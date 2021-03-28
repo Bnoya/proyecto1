@@ -9,77 +9,76 @@
 }
 
 .menu{
-    height: 44px;
-}
-.menu img{
-    margin-top: 10px;
-    size: 24px;
-}
 
-.menu label{
-    float: right;
-    cursor: pointer;
-}
-.menu label span{
-    display: block;
-    position: relative;
-    content: "";
-    width: 18px;
-    height: 2px;
-    background-color: black;
-    margin-top: 20px;
-    margin-right: 16px;
-    transition: background-color .2s;
-}
-.menu label span::before, .menu label span::after{
-    display: block;
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: black;
-    transition: transform .2s ease-out;
-}
-.menu label span::before{
-    top: -5px;
-}
-.menu label span::after{
-    top: 5px;
-}
-.menu input{
-    display: none;
-}
-.menu nav ul{
-    background: blue;
-    width: 100%;
-    max-height: 0px;
-    overflow: hidden;
-    transition: max-height .4s ease-in-out;
-}
-.menu input:checked ~ nav ul{
-    max-height: 240px;
-}
-.menu input:checked ~ label span{
-    background: transparent;
-}
-.menu input:checked ~ label span::before{
-    transform: rotate(-45deg);
-    top: 0;
-}
-.menu input:checked ~ label span::after{
-    transform: rotate(45deg);
-    top: 0;
-}
-.menu{
-    list-style: none;
-}
-.menu li a {
-    text-decoration: none;
-    color: white;
-    font-size: 36px;
-    text-align: center;
-    margin-left: 20px;
-    position: relative;
+    img{
+        margin-top: 10px;
+        margin-left: 16px;
+        width: 24px;
+        height: 24px;
+    }
+    label{
+        float: right;
+    }
+    .hamburger{
+        margin-top: 16px;
+        margin-bottom: 16px;
+        margin-right: 19px;
+        display: block;
+        position: relative;
+        content: "";
+        width: 18px;
+        height: 2px;
+        background-color: #060A24;
+        transition: background-color .2s;
+    }
+    .hamburger::before,.hamburger::after{
+        display: block;
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: #060A24;
+        transition: transform .2s ease-out;
+    }
+    .hamburger::before{
+        top: -5px;
+    }
+    .hamburger::after{
+        top: 5px;
+    }
+    input{
+        display: none;
+    }
+    nav{
+        clear: both;
+    }
+    .nav-links{
+        background: #0000A3;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .4s ease-in-out;
+        list-style: none;
+    }
+    input:checked ~ nav ul{
+        max-height: 100%;
+    }
+    input:checked ~ label span{
+        background: transparent;
+    }
+    input:checked ~ label span::before{
+        transform: rotate(-45deg);
+        top: 0;
+    }
+    input:checked ~ label span::after{
+        transform: rotate(45deg);
+        top: 0;
+    }
+    nav li a{
+        text-decoration: none;
+        color: #ffffff;
+        padding: 4%;
+    }
+
 }
 button{
     width: 288px;
@@ -101,17 +100,21 @@ button{
     padding-top: 30px;
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
+    margin-left: 11px;
 }
 .spotify h3{
     color: white;
     font-size: 36px;
 
 }
-.phone img{
-    max-width: 360px;
-    display: block;
-    margin: auto;
+.phone{
+    display: flex;
+    flex-flow: row wrap;
+    
+    img{
+        max-width: 360px;
+        justify-content: center;
+    }
 }
 .imagenes img{
     max-width: 100%;
@@ -127,3 +130,6 @@ button{
     font-size: 24px;
 }
 
+.col{
+    width: 20%;
+}

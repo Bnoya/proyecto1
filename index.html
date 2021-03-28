@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
     <title>Podcast</title>
     <link rel="stylesheet" href="style.css">
 
@@ -13,11 +15,11 @@
 <body>
     <header>
         <div class="menu">
-            <img src="./logo.svg" alt="">
+            <img src="./recursos/logo.svg" alt="">
             <input type="checkbox" id="checkbox">
-            <label for="checkbox"><span></span></label>
+            <label for="checkbox" id="checkbox" class="hamburger"><span></span></label>
             <nav>
-                <ul>
+                <ul class="nav-links">
                     <li> <a href="#">Episodios</a> </li>
                     <li><a href="#">Nosotros</a></li>
                     <li><a href="#">Entrevista</a></li>
@@ -80,7 +82,7 @@
             </div>
         </section>
         <section>
-            <div>
+            <div class="box">
                 <h2>
                     ¿Querés las últimas novedades?
                 </h2>
@@ -89,7 +91,7 @@
         </section>
     </main>
     <footer>
-        <div>
+        <div class="box">
             <p>&copy; 2019- hello blue pale dot</p>
         </div>
         <div class="redes">
