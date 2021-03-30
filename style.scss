@@ -3,12 +3,12 @@
     border: 0;
     padding: 0;
     outline: 0;
+    margin-right: -5px;
     font-family: 'IBM Plex Mono', monospace;
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .menu{
-
     img{
         margin-top: 10px;
         margin-left: 16px;
@@ -21,7 +21,6 @@
     .hamburger{
         margin-top: 16px;
         margin-bottom: 16px;
-        margin-right: 19px;
         display: block;
         position: relative;
         content: "";
@@ -57,6 +56,7 @@
         overflow: hidden;
         transition: max-height .4s ease-in-out;
         list-style: none;
+        font-size: 25px;
     }
     input:checked ~ nav ul{
         max-height: 400px;
@@ -82,6 +82,25 @@
     }
 
 }
+.title{
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 16px;
+    h1{
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 36px;
+        color: #060A24;
+        line-height: 42px;
+        max-width: 288px;
+    }
+    p{
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 14px;
+        line-height: 22px;
+        justify-content: center;
+        color: #060A24;
+    }
+}
 button{
     width: 288px;
     border-radius: 10px;
@@ -96,8 +115,7 @@ button{
     padding-top: 30px;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 11px;
-    padding-left: 25%;
+    margin: auto;
 }
 .spotify h3{
     color: white;
@@ -110,6 +128,20 @@ button{
     img{
         max-width: 360px;
         justify-content: center;
+    }
+    h3{
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 36px;
+        line-height: 42px;
+        color: #060A24;
+        max-width: 288px;
+    }
+    p{
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 14px;
+        line-height: 22px;
+        justify-content: center;
+        color: #060A24;
     }
 }
 .imagenes img{
@@ -126,7 +158,41 @@ button{
     font-size: 24px;
 }
 
-.col{
-    width: 20%;
-}
 
+@media (min-width: 800px) {
+    .menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        img{
+
+        }
+        .hamburger{
+            display: none;
+        }
+        .nav-links{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            background: white;
+            max-height: 100px;
+            margin-right: 84px;
+            width: 600px;
+            
+            li{
+                list-style: none;
+                padding: 2%;
+                a{
+                    text-decoration: none;
+                    color: #000000;
+                    font-size: 16px;
+                }
+            }
+
+        }
+    button{
+        margin-left: 200px;
+    }
+    }
+}

@@ -3,6 +3,7 @@
   border: 0;
   padding: 0;
   outline: 0;
+  margin-right: -5px;
   font-family: 'IBM Plex Mono', monospace;
   font-family: 'IBM Plex Sans', sans-serif;
 }
@@ -21,7 +22,6 @@
 .menu .hamburger {
   margin-top: 16px;
   margin-bottom: 16px;
-  margin-right: 19px;
   display: block;
   position: relative;
   content: "";
@@ -68,6 +68,7 @@
   -webkit-transition: max-height .4s ease-in-out;
   transition: max-height .4s ease-in-out;
   list-style: none;
+  font-size: 25px;
 }
 
 .menu input:checked ~ nav ul {
@@ -100,6 +101,35 @@
   padding: 4%;
 }
 
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin-left: 16px;
+}
+
+.title h1 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 36px;
+  color: #060A24;
+  line-height: 42px;
+  max-width: 288px;
+}
+
+.title p {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 14px;
+  line-height: 22px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #060A24;
+}
+
 button {
   width: 288px;
   border-radius: 10px;
@@ -117,8 +147,7 @@ button {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-left: 11px;
-  padding-left: 25%;
+  margin: auto;
 }
 
 .spotify h3 {
@@ -143,6 +172,24 @@ button {
           justify-content: center;
 }
 
+.phone h3 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+  color: #060A24;
+  max-width: 288px;
+}
+
+.phone p {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 14px;
+  line-height: 22px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #060A24;
+}
+
 .imagenes img {
   max-width: 100%;
   display: block;
@@ -159,7 +206,52 @@ button {
   font-size: 24px;
 }
 
-.col {
-  width: 20%;
+@media (min-width: 800px) {
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu .hamburger {
+    display: none;
+  }
+  .menu .nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    background: white;
+    max-height: 100px;
+    margin-right: 84px;
+    width: 600px;
+  }
+  .menu .nav-links li {
+    list-style: none;
+    padding: 2%;
+  }
+  .menu .nav-links li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+  }
+  .menu button {
+    margin-left: 200px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
