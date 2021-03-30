@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:ital@1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans&display=swap');
 * {
     margin: 0;
     border: 0;
     padding: 0;
     outline: 0;
+    font-family: 'IBM Plex Mono', monospace;
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
@@ -60,7 +59,7 @@
         list-style: none;
     }
     input:checked ~ nav ul{
-        max-height: 100%;
+        max-height: 400px;
     }
     input:checked ~ label span{
         background: transparent;
@@ -80,9 +79,6 @@
         color: #ffffff;
         padding: 4%;
         }
-        :hover{
-            background-color: #0f0fb3;
-        }
     }
 
 }
@@ -101,6 +97,7 @@ button{
     display: flex;
     flex-wrap: wrap;
     margin-left: 11px;
+    padding-left: 25%;
 }
 .spotify h3{
     color: white;
@@ -133,29 +130,3 @@ button{
     width: 20%;
 }
 
-@media screen and (min-width: 450px){
-    .menu{
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        list-style: none;
-        padding: 0;
-        background-color: white;
-    }
-    .menu label span{
-        display: none;
-    }
-    .menu input{
-        display: none;
-    }
-    .menu nav ul{
-        overflow: visible;
-    }
-    .menu li a{
-        text-decoration: none;
-        color: black;
-        padding: 30px;
-
-    }
-
-}
