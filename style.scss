@@ -3,8 +3,6 @@
     border: 0;
     padding: 0;
     outline: 0;
-    font-family: 'IBM Plex Mono', monospace;
-    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .menu{
@@ -128,6 +126,8 @@
         transform: skewY(5deg);
         display: flex;
         flex-wrap: wrap;
+        width: 298px ;
+        height: 225px;
         h3{
             color: white;
             font-size: 36px;
@@ -284,6 +284,8 @@
         .spotify{
             display: flex;
             flex-direction: row;
+            width: unset;
+            height: unset;
         }
     }
     /*falta acomodar frames y ver tamaños*/
