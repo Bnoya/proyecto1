@@ -3,7 +3,6 @@
     border: 0;
     padding: 0;
     outline: 0;
-    margin-right: -5px;
     font-family: 'IBM Plex Mono', monospace;
     font-family: 'IBM Plex Sans', sans-serif;
 }
@@ -21,6 +20,7 @@
     .hamburger{
         margin-top: 16px;
         margin-bottom: 16px;
+        margin-right: 16px;
         display: block;
         position: relative;
         content: "";
@@ -82,6 +82,9 @@
     }
 
 }
+
+/* teminado el menu hamburguesa*/
+
 .title{
     display: flex;
     flex-flow: row wrap;
@@ -99,6 +102,7 @@
         line-height: 22px;
         justify-content: center;
         color: #060A24;
+        max-width: 288px;
     }
 }
 button{
@@ -109,53 +113,86 @@ button{
     justify-items: center;
     display: block;
     margin: auto;
+    margin-bottom: 24px;
+    margin-top: 16px;
 }
-
-.spotify{
-    padding-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
+/*boton para movil */
+.box{
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    margin-top: 40px;
+    padding-left: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transform: skewY(-5deg);
+    .spotify{
+        transform: skewY(5deg);
+        display: flex;
+        flex-wrap: wrap;
+        h3{
+            color: white;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        iframe{
+            width: 298px;
+            height: 225px;
+            padding: 0;
+        }
+    }
 }
-.spotify h3{
-    color: white;
-    font-size: 36px;
-
-}
+/* spotify terminado movil*/
 .phone{
     display: flex;
     flex-flow: row wrap;
     img{
-        max-width: 360px;
+        max-width: 320px;
         justify-content: center;
     }
-    h3{
-        font-family: 'IBM Plex Sans', sans-serif;
-        font-size: 36px;
-        line-height: 42px;
-        color: #060A24;
-        max-width: 288px;
-    }
-    p{
-        font-family: 'IBM Plex Mono', monospace;
-        font-size: 14px;
-        line-height: 22px;
-        justify-content: center;
-        color: #060A24;
+    .text{
+
+        h3{
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 36px;
+            line-height: 42px;
+            color: #060A24;
+            max-width: 288px;
+        }
+        p{
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 14px;
+            line-height: 22px;
+            justify-content: center;
+            color: #060A24;
+            max-width: 288px;
+        }
     }
 }
 .imagenes img{
-    max-width: 100%;
+    max-width: 320px;
     display: block;
     margin: auto;
 }
 .topics img{
-    display: block;
+    display: flex;
+    flex-flow: row wrap;
     margin: auto;
 }
 .topics h5{
     text-align: center;
     font-size: 24px;
+}
+.sub-box{
+    transform: skewY(5deg);
+    h2{
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        color: #ffffff;
+        width: 200px;
+        display: block;
+        margin: auto;
+    }
 }
 
 
@@ -165,9 +202,6 @@ button{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        img{
-
-        }
         .hamburger{
             display: none;
         }
