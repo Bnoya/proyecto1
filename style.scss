@@ -88,13 +88,13 @@
 .title{
     display: flex;
     flex-flow: row wrap;
-    margin-left: 16px;
     h1{
         font-family: 'IBM Plex Sans', sans-serif;
         font-size: 36px;
         color: #060A24;
         line-height: 42px;
-        max-width: 288px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
     p{
         font-family: 'IBM Plex Mono', monospace;
@@ -102,12 +102,13 @@
         line-height: 22px;
         justify-content: center;
         color: #060A24;
-        max-width: 288px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 }
+
 button{
     width: 288px;
-    border-radius: 10px;
     background: #00F3BB;
     height: 48px;
     justify-items: center;
@@ -120,9 +121,9 @@ button{
 .box{
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     margin-top: 40px;
-    padding-left: 16px;
+    padding-left: 11px;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 70px;
     transform: skewY(-5deg);
     .spotify{
         transform: skewY(5deg);
@@ -136,7 +137,7 @@ button{
         iframe{
             width: 298px;
             height: 225px;
-            padding: 0;
+            margin-bottom: -80px;
         }
     }
 }
@@ -144,18 +145,22 @@ button{
 .phone{
     display: flex;
     flex-flow: row wrap;
+    position: relative;
+    margin-top: -50px;
+    z-index: 5;
     img{
         max-width: 320px;
         justify-content: center;
     }
     .text{
-
+        padding-right: 16px;
+        padding-left: 16px;
         h3{
             font-family: 'IBM Plex Sans', sans-serif;
             font-size: 36px;
             line-height: 42px;
             color: #060A24;
-            max-width: 288px;
+
         }
         p{
             font-family: 'IBM Plex Mono', monospace;
@@ -163,24 +168,50 @@ button{
             line-height: 22px;
             justify-content: center;
             color: #060A24;
-            max-width: 288px;
+
         }
     }
 }
-.imagenes img{
+.imagenes {
+    h3{
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 36px;
+        line-height: 42px;
+        color: #060A24;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    
+    img{
     max-width: 320px;
     display: block;
     margin: auto;
+    }
 }
-.topics img{
-    display: flex;
-    flex-flow: row wrap;
-    margin: auto;
+
+
+.topics {
+    h3{
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 36px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 42px;
+        padding-left: 16px;
+    }
+    img{
+        display: flex;
+        flex-flow: row wrap;
+        margin: auto;
+    }
+    h5{
+        font-family: 'IBM Plex Sans', sans-serif;
+        text-align: center;
+        font-size: 24px;
+        color: #060A24;
+    }
 }
-.topics h5{
-    text-align: center;
-    font-size: 24px;
-}
+
 .sub-box{
     transform: skewY(5deg);
     h2{
@@ -210,23 +241,34 @@ button{
             flex-direction: row;
             justify-content: space-evenly;
             background: white;
-            max-height: 100px;
+            max-height: 80px;
             margin-right: 84px;
             width: 600px;
             
             li{
                 list-style: none;
-                padding: 2%;
+                padding: 1.5%;
                 a{
                     text-decoration: none;
-                    color: #000000;
+                    color: #060A24;
                     font-size: 16px;
                 }
             }
-
         }
-    button{
-        margin-left: 200px;
     }
+    .button{
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: flex-start;
+        button{
+            width: 226px;
+            background: #00F3BB;
+            height: 48px;
+            justify-items: center;
+            display: block;
+            margin: auto;
+            margin-bottom: 24px;
+            margin-top: 16px;
+        }
     }
 }
