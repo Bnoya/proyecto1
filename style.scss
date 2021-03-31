@@ -121,7 +121,6 @@
 .box{
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     margin-top: 40px;
-    padding-left: 11px;
     padding-top: 20px;
     padding-bottom: 70px;
     transform: skewY(-5deg);
@@ -160,7 +159,6 @@
             font-size: 36px;
             line-height: 42px;
             color: #060A24;
-
         }
         p{
             font-family: 'IBM Plex Mono', monospace;
@@ -168,10 +166,10 @@
             line-height: 22px;
             justify-content: center;
             color: #060A24;
-
         }
     }
 }
+/*phone terminado en movil*/
 .imagenes {
     h3{
         font-family: 'IBM Plex Sans', sans-serif;
@@ -189,7 +187,7 @@
     }
 }
 
-
+/* imagenes terminadas en movil*/
 .topics {
     h3{
         font-family: 'IBM Plex Sans', sans-serif;
@@ -211,7 +209,7 @@
         color: #060A24;
     }
 }
-
+/*topics terminados*/
 .sub-box{
     transform: skewY(5deg);
     h2{
@@ -224,6 +222,15 @@
         display: block;
         margin: auto;
     }
+}
+/* falta overflow para sacar diagonal de abajo*/
+.copy{
+    display: flex;
+    justify-content: center;
+}
+.redes{
+    display: flex;
+    justify-content: space-around;
 }
 
 
@@ -256,7 +263,7 @@
             }
         }
     }
-
+    /* Menu en pc terminado*/
     .button{
         display: flex;
         flex-flow: wrap row;
@@ -270,6 +277,16 @@
             margin-top: 16px;
         }
     }
+    /*boton en pc terminado*/
+    .box{
+        display: flex;
+        flex-direction: column;
+        .spotify{
+            display: flex;
+            flex-direction: row;
+        }
+    }
+    /*falta acomodar frames y ver tamaños*/
     .title{
         display: flex;
         flex-flow: column wrap;
@@ -277,6 +294,7 @@
             width: 628px;
         }
     }
+    /*Terminado para pc*/
     .imagenes{
         display: flex;
         flex-flow: row wrap;
@@ -285,4 +303,7 @@
             height: 364px;
         }
     }
+    /*falta bajar las imagenes y poner 3 por fila*/
+    
+
 }
