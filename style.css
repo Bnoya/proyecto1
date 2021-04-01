@@ -71,7 +71,7 @@
 }
 
 .menu input:checked ~ nav ul {
-  max-height: 400px;
+  max-height: 500px;
 }
 
 .menu input:checked ~ label span {
@@ -97,7 +97,12 @@
 .menu nav li a {
   text-decoration: none;
   color: #ffffff;
-  padding: 4%;
+  margin-bottom: 24px;
+  font-family: IBMPlexMono;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 28px;
+  padding-left: 16px;
 }
 
 /* teminado el menu hamburguesa*/
@@ -167,20 +172,20 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 298px;
-  height: 225px;
 }
 
 .box .spotify h3 {
   color: white;
   font-size: 36px;
   margin-bottom: 20px;
+  margin-left: 16px;
 }
 
 .box .spotify iframe {
   width: 298px;
   height: 225px;
-  margin-bottom: -80px;
+  margin-bottom: -60px;
+  margin-left: 11px;
 }
 
 /* spotify terminado movil*/
@@ -271,6 +276,14 @@
 }
 
 /*topics terminados*/
+.box_special {
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  margin-top: 40px;
+  padding-top: 20px;
+  -webkit-transform: skewY(-5deg);
+          transform: skewY(-5deg);
+}
+
 .sub-box {
   -webkit-transform: skewY(5deg);
           transform: skewY(5deg);
@@ -345,9 +358,27 @@
     padding: 1.5%;
   }
   .menu .nav-links li a {
+    position: relative;
     text-decoration: none;
     color: #060A24;
     font-size: 16px;
+  }
+  .menu .nav-links li a::after {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    background: #00F3BB;
+    bottom: 74%;
+    left: -5%;
+    -webkit-transition: width .3s;
+    transition: width .3s;
+  }
+  .menu .nav-links li a:hover::after {
+    width: 100%;
+  }
+  .menu .nav-links li a:hover {
+    color: #00F3BB;
   }
   /* Menu en pc terminado*/
   .button {
@@ -369,6 +400,9 @@
     height: 48px;
     margin-bottom: 24px;
     margin-top: 16px;
+  }
+  .button button:hover {
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
   }
   /*boton en pc terminado*/
   .box {

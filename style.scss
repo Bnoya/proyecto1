@@ -57,7 +57,7 @@
         font-size: 25px;
     }
     input:checked ~ nav ul{
-        max-height: 400px;
+        max-height: 500px;
     }
     input:checked ~ label span{
         background: transparent;
@@ -75,7 +75,12 @@
         a{
         text-decoration: none;
         color: #ffffff;
-        padding: 4%;
+        margin-bottom: 24px;
+        font-family: IBMPlexMono;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 28px;
+        padding-left: 16px;
         }
     }
 
@@ -126,17 +131,17 @@
         transform: skewY(5deg);
         display: flex;
         flex-wrap: wrap;
-        width: 298px ;
-        height: 225px;
         h3{
             color: white;
             font-size: 36px;
             margin-bottom: 20px;
+            margin-left: 16px;
         }
         iframe{
             width: 298px;
             height: 225px;
-            margin-bottom: -80px;
+            margin-bottom: -60px;
+            margin-left: 11px;
         }
     }
 }
@@ -210,6 +215,12 @@
     }
 }
 /*topics terminados*/
+.box_special{
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    margin-top: 40px;
+    padding-top: 20px;
+    transform: skewY(-5deg);
+}
 .sub-box{
     transform: skewY(5deg);
     h2{
@@ -256,9 +267,26 @@
                 list-style: none;
                 padding: 1.5%;
                 a{
+                    position: relative;
                     text-decoration: none;
                     color: #060A24;
                     font-size: 16px;
+                }
+                a::after{
+                    content: "";
+                    position: absolute;
+                    width: 90%;
+                    height: 1px;
+                    background: #00F3BB;
+                    bottom: 74%;
+                    left: -5%;
+                    transition: width .3s;
+                }
+                a:hover::after{
+                    width: 100%;
+                }
+                a:hover{
+                    color: #00F3BB;
                 }
             }
         }
@@ -275,6 +303,9 @@
             height: 48px;
             margin-bottom: 24px;
             margin-top: 16px;
+        }
+        button:hover{
+            background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
         }
     }
     /*boton en pc terminado*/
