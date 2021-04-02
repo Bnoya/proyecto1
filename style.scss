@@ -76,7 +76,7 @@
         text-decoration: none;
         color: #ffffff;
         margin-bottom: 24px;
-        font-family: IBMPlexMono;
+        font-family: 'IBM Plex Mono', monospace;;
         font-size: 16px;
         letter-spacing: 0;
         line-height: 28px;
@@ -127,16 +127,19 @@
     padding-top: 20px;
     padding-bottom: 70px;
     transform: skewY(-5deg);
+    h3{
+        color: white;
+        font-size: 36px;
+        margin-bottom: 20px;
+        margin-left: 16px;
+        transform: skewY(5deg);
+        margin-top: 50px;
+    }
     .spotify{
         transform: skewY(5deg);
         display: flex;
         flex-wrap: wrap;
-        h3{
-            color: white;
-            font-size: 36px;
-            margin-bottom: 20px;
-            margin-left: 16px;
-        }
+        justify-content: space-between;
         iframe{
             width: 298px;
             height: 225px;
@@ -216,25 +219,37 @@
 }
 /*topics terminados*/
 .box_special{
-    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-    margin-top: 40px;
-    padding-top: 20px;
-    transform: skewY(-5deg);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 341px;
+    overflow: hidden;
 }
+.box_special::before {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    top: 7.5vw;
+    height: 200%;
+    width: 500%;
+    transform: skewY(355deg);
+    background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+}
+
 .sub-box{
-    transform: skewY(5deg);
     h2{
         font-family: 'IBM Plex Sans', sans-serif;
         font-size: 36px;
         line-height: 42px;
         text-align: center;
         color: #ffffff;
-        width: 200px;
         display: block;
         margin: auto;
     }
 }
-/* falta overflow para sacar diagonal de abajo*/
+/* Terminado*/
 .copy{
     display: flex;
     justify-content: center;
@@ -243,6 +258,7 @@
     display: flex;
     justify-content: space-around;
 }
+/*Terminado*/
 
 
 @media (min-width: 800px) {
@@ -271,22 +287,11 @@
                     text-decoration: none;
                     color: #060A24;
                     font-size: 16px;
-                }
-                a::after{
-                    content: "";
-                    position: absolute;
-                    width: 90%;
-                    height: 1px;
-                    background: #00F3BB;
-                    bottom: 74%;
-                    left: -5%;
-                    transition: width .3s;
-                }
-                a:hover::after{
-                    width: 100%;
+                    font-family: 'IBM Plex Mono', monospace;
                 }
                 a:hover{
                     color: #00F3BB;
+                    text-decoration: line-through;
                 }
             }
         }
@@ -312,12 +317,18 @@
     .box{
         display: flex;
         flex-direction: column;
-        .spotify{
+        height: 50vh;
+        .spotify {
             display: flex;
             flex-direction: row;
-            width: unset;
-            height: unset;
+            margin-top: 50px;
+            justify-content: space-around;
         }
+            iframe{
+                width: unset;
+                height: unset;
+                padding-right: 60px;
+            }
     }
     /*falta acomodar frames y ver tamaños*/
     .title{
@@ -334,6 +345,17 @@
         img{
             width: 480px;
             height: 364px;
+        }
+    }
+    .sub-box{
+        h2{
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 36px;
+            line-height: 42px;
+            text-align: center;
+            color: #ffffff;
+            display: block;
+            margin: auto;
         }
     }
     /*falta bajar las imagenes y poner 3 por fila*/
