@@ -317,12 +317,20 @@
     .box{
         display: flex;
         flex-direction: column;
-        height: 50vh;
+        height: 75vh;
         .spotify {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             margin-top: 50px;
-            justify-content: space-around;
+            align-items: center;
+            .startframe{
+                flex-flow: row wrap;
+                justify-content: center;
+            } 
+            .endframe{
+                flex-flow: row wrap;
+                justify-content: center;
+            }
         }
             iframe{
                 width: unset;
@@ -347,7 +355,30 @@
             height: 364px;
         }
     }
+    .topics{
+        display: flex;
+        flex-flow: column wrap;
+        .img-topics{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            .1-topic, .2-topic, .3-topic, .4-topic{
+                display: flex;
+                flex-flow: column wrap;
+                h5{
+                    font-family: 'IBM Plex Sans', sans-serif;
+                    text-align: center;
+                    font-size: 24px;
+                    color: #060A24;
+                }
+            }
+        }
+    }
     .sub-box{
+        padding-top: 200px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
         h2{
             font-family: 'IBM Plex Sans', sans-serif;
             font-size: 36px;
@@ -357,8 +388,21 @@
             display: block;
             margin: auto;
         }
+        .button{
+            justify-content: center;
+        }
     }
     /*falta bajar las imagenes y poner 3 por fila*/
-    
+    .pagfoot{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        padding-left: 100px;
+        padding-right: 100px;
+        .redes{
+            width: 200px;
+            justify-content: space-around;
+        }
+    }
 
 }
