@@ -60,7 +60,7 @@
 }
 
 .menu .nav-links {
-  background: #0000A3;
+  background: #0000EC;
   max-height: 0;
   overflow: hidden;
   -webkit-transition: max-height .4s ease-in-out;
@@ -188,16 +188,37 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.box .spotify iframe {
-  margin-left: 11px;
+.box .spotify .startframe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.box .spotify .endframe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /* spotify terminado movil*/
@@ -374,6 +395,9 @@
             align-items: center;
     cursor: unset;
   }
+  .menu img {
+    margin-left: 6.95%;
+  }
   .menu .hamburger {
     display: none;
   }
@@ -425,6 +449,10 @@
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
+    margin-left: 13.88%;
+  }
+  .title .color {
+    color: #0000EC;
   }
   .title p {
     width: 628px;
@@ -441,6 +469,7 @@
         -ms-flex-pack: start;
             justify-content: flex-start;
     padding-left: 16px;
+    margin-left: 13.88%;
   }
   .button button {
     width: 226px;
@@ -451,6 +480,7 @@
   }
   .button button:hover {
     background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    color: #FFFFFF;
   }
   /*boton en pc terminado*/
   .box {
@@ -465,7 +495,7 @@
   .box h3 {
     font-family: 'IBMPlexSans', sans-serif;
     font-weight: normal;
-    margin-left: 200px;
+    margin-left: 13.88%;
   }
   .box .spotify {
     display: -webkit-box;
@@ -584,7 +614,7 @@
   }
   .topics h3 {
     margin-bottom: 69px;
-    margin-left: 200px;
+    margin-left: 13.88%;
     font-family: 'IBMPlexSans', sans-serif;
     font-weight: normal;
   }
