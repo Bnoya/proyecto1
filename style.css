@@ -527,6 +527,7 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-top: 74px;
   }
   .box iframe {
     width: 584px;
