@@ -378,6 +378,11 @@
   margin-bottom: 31px;
 }
 
+.redes a {
+  text-decoration: none;
+  color: #060A24;
+}
+
 /*Terminado*/
 @media (min-width: 800px) {
   .menu {
