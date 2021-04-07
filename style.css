@@ -751,10 +751,14 @@
     background-color: #FFFFFF;
     height: 18px;
   }
+  .pagfoot .redes a {
+    text-decoration: none;
+    color: #060A24;
+  }
   .pagfoot .redes button {
     height: 18px;
   }
 }
 
-/* Revisar bolds de letras y listo*/
+/* Finalizado, esperar correcciones*/
 /*# sourceMappingURL=style.css.map */
