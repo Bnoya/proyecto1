@@ -353,6 +353,7 @@
   display: block;
   margin: auto;
   font-weight: normal;
+  margin-top: 60px;
 }
 
 /* Terminado*/
@@ -496,6 +497,7 @@
     font-family: 'IBMPlexSans', sans-serif;
     font-weight: normal;
     margin-left: 13.88%;
+    margin-top: 10%;
   }
   .box .spotify {
     display: -webkit-box;
@@ -695,13 +697,31 @@
     line-height: 42px;
     text-align: center;
     color: #ffffff;
-    display: block;
-    margin: auto;
-  }
-  .sub-box .button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: wrap row;
+            flex-flow: wrap row;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 60px;
+  }
+  .sub-box .button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 0;
+    padding-left: 0;
   }
   /*Terminado para pc*/
   .pagfoot {

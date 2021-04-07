@@ -259,6 +259,8 @@
         display: block;
         margin: auto;
         font-weight: normal;
+        margin-top: 60px;
+
     }
 }
 /* Terminado*/
@@ -363,6 +365,7 @@
             font-family: 'IBMPlexSans', sans-serif;
             font-weight: normal;
             margin-left: 13.88%;
+            margin-top: 10%;
         }
         .spotify {
             display: flex;
@@ -491,11 +494,17 @@
             line-height: 42px;
             text-align: center;
             color: #ffffff;
-            display: block;
-            margin: auto;
+            display: flex;
+            flex-flow: wrap row;
+            justify-content: center;
+            margin-bottom: 60px;
         }
         .button{
+            display: flex;
+            flex-flow: row wrap;
             justify-content: center;
+            margin-left: 0;
+            padding-left: 0;
         }
     }
     /*Terminado para pc*/
