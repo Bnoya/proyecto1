@@ -164,7 +164,7 @@
           transform: skewY(-5deg);
 }
 
-.box h3 {
+.box h2 {
   color: white;
   font-size: 36px;
   margin-bottom: 20px;
@@ -263,7 +263,7 @@
   padding-left: 16px;
 }
 
-.phone .text h3 {
+.phone .text h2 {
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 36px;
   line-height: 42px;
@@ -282,7 +282,7 @@
 }
 
 /*phone terminado en movil*/
-.imagenes h3 {
+.imagenes h2 {
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 36px;
   line-height: 42px;
@@ -298,7 +298,7 @@
 }
 
 /* imagenes terminadas en movil*/
-.topics h3 {
+.topics h2 {
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 36px;
   color: #060A24;
@@ -318,7 +318,7 @@
   margin: auto;
 }
 
-.topics h5 {
+.topics h3 {
   font-family: 'IBM Plex Sans', sans-serif;
   text-align: center;
   font-size: 24px;
@@ -469,6 +469,7 @@
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
     margin-left: 13.88%;
+    font-weight: normal;
   }
   .title .color {
     color: #0000EC;
@@ -514,7 +515,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .box h3 {
+  .box h2 {
     font-family: 'IBMPlexSans', sans-serif;
     font-weight: normal;
     margin-left: 13.88%;
@@ -593,7 +594,7 @@
     width: 464px;
     margin-top: 150px;
   }
-  .phone .text h3 {
+  .phone .text h2 {
     font-family: 'IBMPlexSans', sans-serif;
     font-weight: normal;
   }
@@ -611,7 +612,7 @@
             flex-flow: column wrap;
     margin-right: 0;
   }
-  .imagenes h3 {
+  .imagenes h2 {
     margin-left: 13.8%;
     margin-bottom: 36px;
     font-family: 'IBMPlexSans', sans-serif;
@@ -643,7 +644,7 @@
             flex-flow: column wrap;
     margin-top: 64px;
   }
-  .topics h3 {
+  .topics h2 {
     margin-bottom: 69px;
     margin-left: 13.88%;
     font-family: 'IBMPlexSans', sans-serif;
@@ -668,13 +669,16 @@
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
   }
-  .topics .img-topics .topic-1 h5, .topics .img-topics .topic-2 h5, .topics .img-topics .topic-3 h5, .topics .img-topics .topic-4 h5 {
-    text-align: center;
+  .topics .img-topics .topic-1 h3, .topics .img-topics .topic-2 h3, .topics .img-topics .topic-3 h3, .topics .img-topics .topic-4 h3 {
+    -ms-flex-line-pack: center;
+        align-content: center;
     font-size: 24px;
     color: #060A24;
     font-family: 'IBM Plex Sans', sans-serif;
-    max-width: 220px;
+    font-weight: bold;
   }
   /*Terminado para pc*/
   .box_special {

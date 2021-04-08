@@ -128,7 +128,7 @@
     padding-top: 20px;
     padding-bottom: 70px;
     transform: skewY(-5deg);
-    h3{
+    h2{
         color: white;
         font-size: 36px;
         margin-bottom: 20px;
@@ -183,7 +183,7 @@
     .text{
         padding-right: 16px;
         padding-left: 16px;
-        h3{
+        h2{
             font-family: 'IBM Plex Sans', sans-serif;
             font-size: 36px;
             line-height: 42px;
@@ -201,7 +201,7 @@
 }
 /*phone terminado en movil*/
 .imagenes {
-    h3{
+    h2{
         font-family: 'IBM Plex Sans', sans-serif;
         font-size: 36px;
         line-height: 42px;
@@ -219,7 +219,7 @@
 
 /* imagenes terminadas en movil*/
 .topics {
-    h3{
+    h2{
         font-family: 'IBM Plex Sans', sans-serif;
         font-size: 36px;
         color: #060A24;
@@ -232,7 +232,7 @@
         flex-flow: row wrap;
         margin: auto;
     }
-    h5{
+    h3{
         font-family: 'IBM Plex Sans', sans-serif;
         text-align: center;
         font-size: 24px;
@@ -346,6 +346,7 @@
         display: flex;
         flex-flow: column wrap;
         margin-left: 13.88%;
+        font-weight: normal;
         .color{
             color: #0000EC;
         }
@@ -379,7 +380,7 @@
         display: flex;
         flex-direction: column;
         
-        h3{
+        h2{
             font-family: 'IBMPlexSans', sans-serif;
             font-weight: normal;
             margin-left: 13.88%;
@@ -429,7 +430,7 @@
             justify-content: center;
             width: 464px;
             margin-top: 150px;
-            h3{
+            h2{
                 font-family: 'IBMPlexSans', sans-serif;
                 font-weight: normal;
             }
@@ -443,7 +444,7 @@
         display: flex;
         flex-flow: column wrap;
         margin-right: 0;
-        h3{
+        h2{
             margin-left: 13.8%;
             margin-bottom: 36px;
             font-family: 'IBMPlexSans', sans-serif;
@@ -465,7 +466,7 @@
         display: flex;
         flex-flow: column wrap;
         margin-top: 64px;
-        h3{
+        h2{
             margin-bottom: 69px;
             margin-left: 13.88%;
             font-family: 'IBMPlexSans', sans-serif;
@@ -478,13 +479,13 @@
             .topic-1, .topic-2, .topic-3, .topic-4{
                 display: flex;
                 flex-flow: column wrap;
-                
-                h5{
-                    text-align: center;
+                align-content: center;
+                h3{
+                    align-content: center;
                     font-size: 24px;
                     color: #060A24;
                     font-family: 'IBM Plex Sans', sans-serif;
-                    max-width: 220px;
+                    font-weight: bold;
                 }
             }
         }
