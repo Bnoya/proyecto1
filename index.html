@@ -34,7 +34,7 @@
     </header>
     <main>
         <div class="title">
-                <h1>Hello <strike>world</strike> pale blue dot<span class="color">.</span></h1> <br>
+                <h1>Hello <span class="strike"> world</span> pale blue dot<span class="color">.</span></h1> <br>
                 <p>El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
         </div>
         <div class="button">
@@ -42,22 +42,22 @@
         </div>
 
         <section class="box">
-            <h3> <a name="show"></a> Episodios</h3>
+            <h3> <a id="show"></a> Episodios</h3>
             <div class="spotify">
                 <div class="startframe">
-                    <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" width="298" height="225" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                    <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" width="298" height="225" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" class="frame"></iframe>
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" class="frame"></iframe>
                 </div>
                 <div class="endframe">
-                    <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" width="298" height="225" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                    <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" width="298" height="225" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" class="frame"></iframe>
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" class="frame"></iframe>
                 </div>
             </div>
             
         </section>
-        <section>
+        <div>
             <article>
-                <div class="phone"> <a name="origin"></a>
+                <div class="phone"> <a id="origin"></a>
                     <img src="./recursos/phone.png" alt="phone">
                     <div class="text">
                         <h3>De dónde venimos</h3>
@@ -66,10 +66,10 @@
                     </div>
                 </div>
             </article>
-        </section>
+        </div>
         <section>
             <div class="imagenes">
-                <h3> <a name="interview"></a> Invitadas/os estelares</h3>
+                <h3> <a id="interview"></a> Invitadas/os estelares</h3>
                 <div class="row">
                     <img src="./recursos/grace-hopper.png" alt="Grace Hopper">
                     <img src="./recursos/Katie-Bouman.png" alt="Katie Bouman">
@@ -82,7 +82,7 @@
         </section>
         <section>
             <div class="topics">
-                <h3> <a name="topic"></a> Algunos de nuestros temas</h3>
+                <h3> <a id="topic"></a> Algunos de nuestros temas</h3>
                 <div class="img-topics">
                     <div class="topic-1">
                         <img src="./recursos/icon1.svg" alt="Trabajo Remoto">
@@ -103,7 +103,6 @@
                 </div>
             </div>
         </section>
-        <section>
             <div class="box_special">
                 <section class="sub-box">
                     <h2>
@@ -114,18 +113,17 @@
                     </div>
                 </section>
             </div>
-        </section>
     </main>
     <footer class="pagfoot">
         <div class="copy">
             <p>&copy; 2019- hello blue pale dot</p>
         </div>
         <div class="redes">
-            <button> <a href="#show"><i class="fab fa-spotify"></i></a></button>
-            <button> <a href="https://www.instagram.com/acamica/"> <i class="fab fa-instagram"></i></a></button>
-            <button><a href="#"><i class="fab fa-twitter"></i></a></button>
-            <button><a href="https://www.facebook.com/Acamica.org"><i class="fab fa-facebook"></i></a></button>
-            <button><a href="#"><i class="fab fa-telegram"></i></a></button>
+            <a href="https://open.spotify.com/"><i class="fab fa-spotify"></i></a>
+            <a href="https://www.instagram.com/acamica/"> <i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/?lang=es"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/Acamica.org"><i class="fab fa-facebook"></i></a>
+            <a href="https://web.telegram.org/#/login"><i class="fab fa-telegram"></i></a>
         </div>
     </footer>
 </body>

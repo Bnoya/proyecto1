@@ -221,6 +221,11 @@
           justify-content: center;
 }
 
+.box .spotify .frame {
+  width: 298px;
+  height: 225px;
+}
+
 /* spotify terminado movil*/
 .phone {
   display: -webkit-box;
@@ -461,6 +466,9 @@
   .title .color {
     color: #0000EC;
   }
+  .title .strike {
+    text-decoration: line-through;
+  }
   .title p {
     width: 628px;
   }
@@ -537,9 +545,9 @@
             justify-content: center;
     margin-top: 74px;
   }
-  .box iframe {
+  .box .frame {
     width: 584px;
-    height: 232px;
+    height: 229px;
     padding-right: 60px;
   }
   /*Terminados spotify... revisar responsive*/
