@@ -168,7 +168,7 @@
   color: white;
   font-size: 36px;
   margin-bottom: 20px;
-  margin-left: 16px;
+  margin-left: 2%;
   -webkit-transform: skewY(5deg);
           transform: skewY(5deg);
   margin-top: 50px;
@@ -240,6 +240,7 @@
 
 .phone img {
   max-width: 320px;
+  height: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -384,7 +385,7 @@
 }
 
 /*Terminado*/
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -446,7 +447,7 @@
     line-height: 28px;
     text-decoration: line-through;
   }
-  /* Menu en pc terminado, falta active*/
+  /* Menu en pc terminado, falta active?*/
   .title {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -541,7 +542,7 @@
     height: 232px;
     padding-right: 60px;
   }
-  /*Terminados spotify*/
+  /*Terminados spotify... revisar responsive*/
   .phone {
     display: -webkit-box;
     display: -ms-flexbox;

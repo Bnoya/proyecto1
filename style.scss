@@ -132,7 +132,7 @@
         color: white;
         font-size: 36px;
         margin-bottom: 20px;
-        margin-left: 16px;
+        margin-left: 2%;
         transform: skewY(5deg);
         margin-top: 50px;
         font-family: 'IBMPlexSans', sans-serif;
@@ -167,6 +167,7 @@
     justify-content: center;
     img{
         max-width: 320px;
+        height: auto;
         justify-content: center;
     }
     .text{
@@ -283,7 +284,7 @@
 /*Terminado*/
 
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
     .menu{
         display: flex;
         flex-direction: row;
@@ -330,7 +331,7 @@
             }
         }
     }
-    /* Menu en pc terminado, falta active*/
+    /* Menu en pc terminado, falta active?*/
     .title{
         display: flex;
         flex-flow: column wrap;
@@ -392,7 +393,7 @@
                 padding-right: 60px;
             }
     }
-    /*Terminados spotify*/
+    /*Terminados spotify... revisar responsive*/
     .phone{
         display: flex;
         flex-direction: row;
@@ -520,7 +521,6 @@
         padding-right: 100px;
         height: 95px;
         align-items: center;
-
         .redes{
             width: 200px;
             font-size: 18px;
