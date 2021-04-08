@@ -208,6 +208,12 @@
           justify-content: center;
 }
 
+.box .spotify .startframe .frame {
+  width: 298px;
+  height: 225px;
+  border: none;
+}
+
 .box .spotify .endframe {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -221,9 +227,10 @@
           justify-content: center;
 }
 
-.box .spotify .frame {
+.box .spotify .endframe .frame {
   width: 298px;
   height: 225px;
+  border: none;
 }
 
 /* spotify terminado movil*/
@@ -535,6 +542,12 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .box .spotify .startframe .frame {
+    width: 550px;
+    height: 250px;
+    border: none;
+    padding-right: 60px;
+  }
   .box .spotify .endframe {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -545,9 +558,10 @@
             justify-content: center;
     margin-top: 74px;
   }
-  .box .frame {
-    width: 584px;
-    height: 229px;
+  .box .spotify .endframe .frame {
+    width: 550px;
+    height: 250px;
+    border: none;
     padding-right: 60px;
   }
   /*Terminados spotify... revisar responsive*/

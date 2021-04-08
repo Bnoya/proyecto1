@@ -149,15 +149,21 @@
             display: flex;
             flex-flow: row wrap;
             justify-content: center;
+            .frame{
+                width: 298px;
+                height: 225px;
+                border: none;
+            }
         }
         .endframe{
             display: flex;
             flex-flow: row wrap;
             justify-content: center;
-        }
-        .frame{
-            width: 298px;
-            height: 225px;
+            .frame{
+                width: 298px;
+                height: 225px;
+                border: none;
+            }
         }
     }
 }
@@ -387,18 +393,26 @@
             .startframe{
                 flex-flow: row wrap;
                 justify-content: center;
+                .frame{
+                    width: 550px;
+                    height: 250px;
+                    border: none;
+                    padding-right: 60px;
+                }
             } 
             .endframe{
                 flex-flow: row wrap;
                 justify-content: center;
                 margin-top: 74px;
+                .frame{
+                    width: 550px;
+                    height: 250px;
+                    border: none;
+                    padding-right: 60px;
+                }
             }
         }
-            .frame{
-                width: 584px;
-                height: 229px;
-                padding-right: 60px;
-            }
+
     }
     /*Terminados spotify... revisar responsive*/
     .phone{
