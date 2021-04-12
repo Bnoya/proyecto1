@@ -252,7 +252,7 @@
 
 .phone img {
   max-width: 320px;
-  height: auto;
+  height: 519px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -519,7 +519,7 @@
     font-family: 'IBMPlexSans', sans-serif;
     font-weight: normal;
     margin-left: 13.88%;
-    margin-top: 10%;
+    margin-top: 5%;
   }
   .box .spotify {
     display: -webkit-box;
