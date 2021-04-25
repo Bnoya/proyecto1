@@ -73,17 +73,17 @@
   max-height: 500px;
 }
 
-.menu input:checked ~ label span {
+.menu input:checked ~ .hamburger {
   background: transparent;
 }
 
-.menu input:checked ~ label span::before {
+.menu input:checked ~ .hamburger::before {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   top: 0;
 }
 
-.menu input:checked ~ label span::after {
+.menu input:checked ~ .hamburger::after {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   top: 0;

@@ -59,14 +59,14 @@
     input:checked ~ nav ul{
         max-height: 500px;
     }
-    input:checked ~ label span{
+    input:checked ~ .hamburger{
         background: transparent;
     }
-    input:checked ~ label span::before{
+    input:checked ~ .hamburger::before{
         transform: rotate(-45deg);
         top: 0;
     }
-    input:checked ~ label span::after{
+    input:checked ~ .hamburger::after{
         transform: rotate(45deg);
         top: 0;
     }
