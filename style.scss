@@ -112,13 +112,21 @@
 .button{
     display: flex;
     justify-content: center;
-    button{
-        width: 288px;
+    align-self: center;
+    a {
+        text-decoration: none;
+        font-family: "IBM Plex Mono", monospace;
+        display: inline-block;
+        font-weight: 500;
+        font-size: 16px;
+        color: #060a24;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 22px;
         background: #00F3BB;
-        height: 48px;
-        margin-bottom: 24px;
-        margin-top: 16px;
-        font-family: 'IBM Plex Mono', monospace;
+        padding-top: 13px;
+        width: 288px;
+        height: 40px;
     }
 }
 /*boton para movil */
@@ -363,14 +371,14 @@
         justify-content: flex-start;
         padding-left: 16px;
         margin-left: 13.88%;
-        button{
+        .button{
             width: 226px;
             background: #00F3BB;
             height: 48px;
             margin-bottom: 24px;
             margin-top: 16px;
         }
-        button:hover{
+        .button:hover{
             background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
             color: #FFFFFF;
         }
